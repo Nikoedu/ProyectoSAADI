@@ -9,6 +9,7 @@ using System.Windows.Forms;
 
 namespace SAADI
 {
+
     public partial class Form1 : Form
     {
         String[] nvl = {"Bajo","Medio","Alto"};
@@ -50,6 +51,11 @@ namespace SAADI
             String nombreUsuario = txt_username.Text;
             String password = txt_password.Text;
             String tipoUsuario = comboBox1.Text;
+            DateTime fechadeNace = monthCalendar1.SelectionStart.Date;
+            String nivelDiscapacidad = comboBox2.Text;
+            MessageBox.Show(""+fechadeNace);
+            Profesor profe = new Profesor(tipoUsuario, nombre, apellido, nombreUsuario, password, fechadeNace, nivelDiscapacidad);
+            profe.agregarUsuario();
         }
 
        

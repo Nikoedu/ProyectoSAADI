@@ -13,3 +13,5 @@ E:\UNAB\Taller I y II\ProyectoSAADI\ProyectoSAADI\Implementacion\SAADI\SAADI\bin
 E:\UNAB\Taller I y II\ProyectoSAADI\ProyectoSAADI\Implementacion\SAADI\SAADI\obj\x86\Release\SAADI.exe
 E:\UNAB\Taller I y II\ProyectoSAADI\ProyectoSAADI\Implementacion\SAADI\SAADI\obj\x86\Release\SAADI.pdb
 E:\UNAB\Taller I y II\ProyectoSAADI\ProyectoSAADI\Implementacion\SAADI\SAADI\obj\x86\Release\AxInterop.ShockwaveFlashObjects.dll
+E:\UNAB\Taller I y II\ProyectoSAADI\ProyectoSAADI\Implementacion\SAADI\SAADI\bin\Release\BDLeni_be.accdb
+E:\UNAB\Taller I y II\ProyectoSAADI\ProyectoSAADI\Implementacion\SAADI\SAADI\bin\Release\SAADI.exe.config
