@@ -20,5 +20,21 @@ namespace SAADI
         {
 
         }
+
+        private void rToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void seleccionarActividadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SeleccionarActividad selAc = new SeleccionarActividad();
+            selAc.Show();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
