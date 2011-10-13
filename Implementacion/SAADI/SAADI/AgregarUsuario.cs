@@ -53,9 +53,15 @@ namespace SAADI
             String tipoUsuario = comboBox1.Text;
             DateTime fechadeNace = monthCalendar1.SelectionStart.Date;
             String nivelDiscapacidad = comboBox2.Text;
-            MessageBox.Show(""+fechadeNace);
-            Profesor profe = new Profesor(tipoUsuario, nombre, apellido, nombreUsuario, password, fechadeNace, nivelDiscapacidad);
-            profe.agregarUsuario();
+            if (nombre.Equals("") || apellido.Equals("") || nombreUsuario.Equals("") || password.Equals("") || tipoUsuario.Equals("") || nivelDiscapacidad.Equals(""))
+            {
+                MessageBox.Show("Debe completar todos los campos");
+            }
+            else
+            {
+                Profesor profe = new Profesor();
+                profe.agregarUsuario(tipoUsuario, nombre, apellido, nombreUsuario, password, fechadeNace, nivelDiscapacidad);
+            }
         }
 
        

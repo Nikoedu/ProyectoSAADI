@@ -18,8 +18,15 @@ namespace SAADI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Profesor profe = new Profesor();
-            profe.buscarPerfil(textBox1.Text, dataGridView1);
+            if (textBox1.Text.Equals(""))
+            {
+                MessageBox.Show("Debe completar el campo pedido");
+            }
+            else
+            {
+                Profesor profe = new Profesor();
+                profe.buscarPerfil(textBox1.Text, dataGridView1);
+            }
         }
     }
 }

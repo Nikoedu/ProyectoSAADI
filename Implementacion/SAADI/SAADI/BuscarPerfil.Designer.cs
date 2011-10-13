@@ -79,7 +79,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "BuscarPerfil";
-            this.Text = "Form1";
+            this.Text = "Buscar Perfil";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

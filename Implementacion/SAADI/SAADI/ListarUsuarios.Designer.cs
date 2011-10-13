@@ -47,7 +47,7 @@
             this.ClientSize = new System.Drawing.Size(458, 375);
             this.Controls.Add(this.dataGridView1);
             this.Name = "ListarUsuarios";
-            this.Text = "Form1";
+            this.Text = "Lista Usuario";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
