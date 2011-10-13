@@ -58,11 +58,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(53, 267);
+            this.label3.Location = new System.Drawing.Point(25, 276);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 13);
+            this.label3.Size = new System.Drawing.Size(114, 13);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Orden Escogido:";
+            this.label3.Text = "Actividades Escogidas";
             // 
             // textBox1
             // 
@@ -115,7 +115,7 @@
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label1);
             this.Name = "CrearPerfil";
-            this.Text = "Form1";
+            this.Text = "Crear Perfil";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -28,35 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaInicioAlumno));
             this.rToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seleccionarActividadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.guardarAvanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.guardarAvanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.axShockwaveFlash1 = new AxShockwaveFlashObjects.AxShockwaveFlash();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(140, 184);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Pantalla Inicio Alumno";
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.rToolStripMenuItem,
-            this.acercaDeToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(443, 24);
-            this.menuStrip1.TabIndex = 3;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // rToolStripMenuItem
             // 
@@ -76,6 +58,13 @@
             this.seleccionarActividadToolStripMenuItem.Text = "Seleccionar Actividad";
             this.seleccionarActividadToolStripMenuItem.Click += new System.EventHandler(this.seleccionarActividadToolStripMenuItem_Click);
             // 
+            // guardarAvanceToolStripMenuItem
+            // 
+            this.guardarAvanceToolStripMenuItem.Name = "guardarAvanceToolStripMenuItem";
+            this.guardarAvanceToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.guardarAvanceToolStripMenuItem.Text = "Guardar Avance";
+            this.guardarAvanceToolStripMenuItem.Click += new System.EventHandler(this.guardarAvanceToolStripMenuItem_Click);
+            // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
@@ -89,24 +78,39 @@
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
             // 
-            // guardarAvanceToolStripMenuItem
+            // menuStrip1
             // 
-            this.guardarAvanceToolStripMenuItem.Name = "guardarAvanceToolStripMenuItem";
-            this.guardarAvanceToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
-            this.guardarAvanceToolStripMenuItem.Text = "Guardar Avance";
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.rToolStripMenuItem,
+            this.acercaDeToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(677, 24);
+            this.menuStrip1.TabIndex = 3;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // axShockwaveFlash1
+            // 
+            this.axShockwaveFlash1.Enabled = true;
+            this.axShockwaveFlash1.Location = new System.Drawing.Point(12, 27);
+            this.axShockwaveFlash1.Name = "axShockwaveFlash1";
+            this.axShockwaveFlash1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axShockwaveFlash1.OcxState")));
+            this.axShockwaveFlash1.Size = new System.Drawing.Size(653, 581);
+            this.axShockwaveFlash1.TabIndex = 4;
             // 
             // PantallaInicioAlumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(443, 380);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(677, 640);
+            this.Controls.Add(this.axShockwaveFlash1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "PantallaInicioAlumno";
             this.Text = "Inicio Alumno";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -114,13 +118,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem rToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem seleccionarActividadToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem guardarAvanceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem guardarAvanceToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private AxShockwaveFlashObjects.AxShockwaveFlash axShockwaveFlash1;
 
     }
 }

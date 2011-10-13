@@ -9,25 +9,28 @@ using System.Windows.Forms;
 
 namespace SAADI
 {
-    public partial class AutentificarUsuario : Form
+    public partial class GuardarActividad : Form
     {
-        public AutentificarUsuario()
+        public GuardarActividad()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+            String nomUsuarioAl = SAADI.PantallaInicioAlumno.us;
+            int idActividad = SAADI.PantallaInicioAlumno.idAct;
+            Avance av = new Avance();
             if (textBox1.Text.Equals("") || textBox2.Text.Equals(""))
             {
                 MessageBox.Show("Debe completar todos los campos");
             }
             else
             {
-                Usuario us = new Usuario();
-                us.autentificarUsuario(textBox1.Text, textBox2.Text);
+                av.guardarAvance(nomUsuarioAl, textBox1.Text, textBox2.Text, idActividad);
             }
-                 
+            
         }
     }
 }

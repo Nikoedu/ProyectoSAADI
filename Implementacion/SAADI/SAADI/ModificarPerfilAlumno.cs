@@ -64,37 +64,43 @@ namespace SAADI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String nombreUs = textBox1.Text;
-            if (existeUsuarioEncEducacional(nombreUs) == false)
-            {
-                int idPerfil = 0;
-                String nombrePerfil = "";
-                String query = "SELECT A.IdPerfil, P.NombrePerfil from Alumno AS A, Perfil AS P where A.IDPerfil = P.IDPerfil AND A.NombreUsuario = '" + nombreUs + "'";
-                String cadena = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\BDLeni_be.accdb"; // no toma el archivo..probemos directamente con C:
-                OleDbConnection conexion = new OleDbConnection(cadena);
-                OleDbDataAdapter adap = new OleDbDataAdapter(query, conexion);
-                OleDbCommand exec = new OleDbCommand(query, conexion);
-                exec.Connection = conexion;
-                exec.Connection.Open();
-                OleDbDataReader aReader = exec.ExecuteReader();
-                while (aReader.Read())
-                {
-                    idPerfil = (int)aReader.GetValue(0);
-                    nombrePerfil = aReader.GetValue(1).ToString();
-                }
-                exec.Connection.Close();
-                label2.Visible = true;
-                label3.Visible = true;
-                comboBox1.Visible = true;
-                textBox2.Visible = true;
-                button2.Visible = true;
-                textBox2.Text = nombrePerfil;
-                llenarComboBox(idPerfil);
-                          
+            if(textBox1.Text.Equals("")){
+                MessageBox.Show("Debe Indicar el Nombre de Usuario del Alumno");
             }
             else
             {
-                MessageBox.Show("No se puede modificar el perfil ya que el usuario no posee actividades para desarrollar");
+                String nombreUs = textBox1.Text;
+                if (existeUsuarioEncEducacional(nombreUs) == false)
+                {
+                    int idPerfil = 0;
+                    String nombrePerfil = "";
+                    String query = "SELECT A.IdPerfil, P.NombrePerfil from Alumno AS A, Perfil AS P where A.IDPerfil = P.IDPerfil AND A.NombreUsuario = '" + nombreUs + "'";
+                    String cadena = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\BDLeni_be.accdb"; // no toma el archivo..probemos directamente con C:
+                    OleDbConnection conexion = new OleDbConnection(cadena);
+                    OleDbDataAdapter adap = new OleDbDataAdapter(query, conexion);
+                    OleDbCommand exec = new OleDbCommand(query, conexion);
+                    exec.Connection = conexion;
+                    exec.Connection.Open();
+                    OleDbDataReader aReader = exec.ExecuteReader();
+                    while (aReader.Read())
+                    {
+                        idPerfil = (int)aReader.GetValue(0);
+                        nombrePerfil = aReader.GetValue(1).ToString();
+                    }
+                    exec.Connection.Close();
+                    label2.Visible = true;
+                    label3.Visible = true;
+                    comboBox1.Visible = true;
+                    textBox2.Visible = true;
+                    button2.Visible = true;
+                    textBox2.Text = nombrePerfil;
+                    llenarComboBox(idPerfil);
+                          
+                }
+                else
+                {
+                    MessageBox.Show("No se puede modificar el perfil ya que el usuario no posee actividades para desarrollar");
+                }
             }
         }
 

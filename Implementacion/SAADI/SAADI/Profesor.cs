@@ -10,49 +10,30 @@ namespace SAADI
 {
     public class Profesor : Usuario
     {
-        //public Avance m_Avance;
-        String tipoUsuario;
-        String nombre;
-        String apellido;
-        String username;
-        String password;
-        DateTime fechaNacimiento;
-        String nivelDiscapacidad;
-
         public Profesor()
         {
-
+            
         }
 
-        public Profesor(String TipoUs, String nom, String ape, String nomUs, String pass, DateTime fechadeNac, String nvl)
+        public void agregarUsuario(String TipoUs, String nom, String ape, String nomUs, String pass, DateTime fechadeNac, String nvl)
         {
-            this.tipoUsuario = TipoUs;
-            this.nombre = nom;
-            this.apellido = ape;
-            this.username = nomUs;
-            this.password = pass;
-            this.fechaNacimiento = fechadeNac;
-            this.nivelDiscapacidad = nvl;
-        }
-
-        //public override void Dispose()
-        //{
-
-        //}
-
-        public void agregarUsuario()
-        {
-            if (existeUsuario(username) == false)
+            String tipoUsuario = TipoUs;
+            setNombre(nom);
+            setApellido(ape);
+            setNombreUsuario(nomUs);
+            setPassword(pass);
+            setFechaNacimiento(fechadeNac);
+            String nivelDiscapacidad = nvl;
+            
+            if (existeUsuario(getNombreUsuario()) == false)
             {
                 if (tipoUsuario.Equals("Alumno"))
                 {
                     int perfilDefecto = 1;
                     int estadoDefecto = 1;
                     String motivoDefecto = "Usuario Habilitado";
-                    String query = "INSERT INTO Alumno VALUES('" + username + "'," + perfilDefecto + ",'" + password + "','" + nombre + "','" + apellido + "','" + fechaNacimiento + "','" + nivelDiscapacidad + "'," + estadoDefecto + ",'" + motivoDefecto + "')";
-                    MessageBox.Show(query);
+                    String query = "INSERT INTO Alumno VALUES('" + getNombreUsuario() + "'," + perfilDefecto + ",'" + getPassword() + "','" + getNombre() + "','" + getApellido() + "','" + getFechaNacimiento() + "','" + nivelDiscapacidad + "'," + estadoDefecto + ",'" + motivoDefecto + "')";
                     String path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase);
-                    MessageBox.Show(path);
                     String cadena = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\BDLeni_be.accdb"; // no toma el archivo..probemos directamente con C:
                     OleDbConnection conexion = new OleDbConnection(cadena);
                     OleDbCommand exec = new OleDbCommand();
@@ -65,10 +46,8 @@ namespace SAADI
                 {
                     int estadoDefecto = 1;
                     String motivoDefecto = "Usuario Habilitado";
-                    String query = "INSERT INTO EncargadoEducacional VALUES('" + username + "','" + password + "','" + nombre + "','" + apellido + "','" + fechaNacimiento + "'," + estadoDefecto + ",'" + motivoDefecto + "','" + tipoUsuario + "')";
-                    MessageBox.Show(query);
+                    String query = "INSERT INTO EncargadoEducacional VALUES('" + getNombreUsuario() + "','" + getPassword() + "','" + getNombre() + "','" + getApellido() + "','" + getFechaNacimiento() + "'," + estadoDefecto + ",'" + motivoDefecto + "','" + tipoUsuario + "')";
                     String path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase);
-                    MessageBox.Show(path);
                     String cadena = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\BDLeni_be.accdb"; // no toma el archivo..probemos directamente con C:
                     OleDbConnection conexion = new OleDbConnection(cadena);
                     OleDbCommand exec = new OleDbCommand();
@@ -326,6 +305,36 @@ namespace SAADI
             con.Close();  
         }
 
+        public void modificarPerfil(int IdPerfil, String nomPerfil, CheckedListBox checkedListBox1)
+        {
+            String query = "DELETE * FROM Actividad_perfil WHERE IDPERFIL = " + IdPerfil;
+            String path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase);
+            String cadena = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\BDLeni_be.accdb"; // no toma el archivo..probemos directamente con C:
+            OleDbConnection conexion = new OleDbConnection(cadena);
+            OleDbCommand exec = new OleDbCommand();
+            exec.Connection = conexion;
+            exec.Connection.Open();
+            exec.CommandText = query;
+            exec.ExecuteNonQuery();
+            conexion.Close();
+            for (int i = 0; i < checkedListBox1.Items.Count; i++)
+            {
+                if(checkedListBox1.GetItemChecked(i) == true){
+                    int idAct = i + 1;
+                    query = "INSERT INTO ACTIVIDAD_PERFIL VALUES(" + IdPerfil + ","+ idAct +")";
+                    path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase);
+                    cadena = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\BDLeni_be.accdb"; // no toma el archivo..probemos directamente con C:
+                    conexion = new OleDbConnection(cadena);
+                    exec = new OleDbCommand();
+                    exec.Connection = conexion;
+                    exec.Connection.Open();
+                    exec.CommandText = query;
+                    exec.ExecuteNonQuery();
+                    conexion.Close();
+                }
+            }
+        }
+
         public void modificarPerfilAlumno(String nombreUs, ComboBox com1)
         {
             String nomPerfil = com1.SelectedItem.ToString();
@@ -504,12 +513,13 @@ namespace SAADI
             }
             
         }
-        public void seleccionarActividad(String nombre)
+        public void seleccionarActividad(int idActividad)
         {
-
+            PantallaInicioAlumno pIA = new PantallaInicioAlumno();
+            pIA.mostrarActividad(idActividad);
+            pIA.Show();
         }
-
-    }//end Profesor
+    }
 }
 
 

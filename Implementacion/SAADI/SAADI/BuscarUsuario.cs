@@ -79,27 +79,52 @@ namespace SAADI
             dataGridView1.Visible = true;
             if (radioButton1.Checked == true)
             {
-                String tipoBusq = "NombreUsuario";
-                Profesor profe = new Profesor();
-                profe.buscarUsuario(textBox1.Text,tipoBusq, dataGridView1);
+                if (textBox1.Text.Equals(""))
+                {
+                    MessageBox.Show("Debe seleccionar el parametro de busqueda");
+                }
+                else
+                {
+                    String tipoBusq = "NombreUsuario";
+                    Profesor profe = new Profesor();
+                    profe.buscarUsuario(textBox1.Text, tipoBusq, dataGridView1);
+                }                               
             }
-            if (radioButton2.Checked == true)
+            else if (radioButton2.Checked == true)
             {
-                String tipoBusq = "NombreAlumno";
-                Profesor profe = new Profesor();
-                profe.buscarUsuario(textBox1.Text, tipoBusq, dataGridView1);
+                if (textBox1.Text.Equals(""))
+                {
+                    MessageBox.Show("Debe seleccionar el parametro de busqueda");
+                }
+                else
+                {
+                    String tipoBusq = "NombreAlumno";
+                    Profesor profe = new Profesor();
+                    profe.buscarUsuario(textBox1.Text, tipoBusq, dataGridView1);
+                }
             }
-            if (radioButton3.Checked == true)
+            else if (radioButton3.Checked == true)
             {
                 String tipoBusq = "FechaDeNacimiento";
                 Profesor profe = new Profesor();
                 profe.buscarUsuario(monthCalendar1.SelectionStart.Date.ToString(), tipoBusq, dataGridView1);
             }
-            if (radioButton4.Checked == true)
+            else if (radioButton4.Checked == true)
             {
-                String tipoBusq = "NivelDiscapacidad";
-                Profesor profe = new Profesor();
-                profe.buscarUsuario(comboBox1.Text, tipoBusq, dataGridView1);
+                if (comboBox1.Text.Equals(""))
+                {
+                    MessageBox.Show("Debe seleccionar el parametro de busqueda");
+                }
+                else
+                {
+                    String tipoBusq = "NivelDiscapacidad";
+                    Profesor profe = new Profesor();
+                    profe.buscarUsuario(comboBox1.Text, tipoBusq, dataGridView1);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un tipo de busqueda");
             }
         }
 

@@ -10,11 +10,11 @@ namespace SAADI{
 
     public class Usuario {
 
-	private String apellido;
-	private DateTime fechaNacimiento;
-	private String nombre;
-	private String nombreUsuario;
-	private String password;
+	protected String apellido;
+    protected DateTime fechaNacimiento;
+    protected String nombre;
+    protected String nombreUsuario;
+    protected String password;
 	public GuiaVirtual m_GuiaVirtual;
 
 	public Usuario(){
@@ -117,13 +117,12 @@ namespace SAADI{
             }
             if (tipoUs == "Alumno" && pasoEstado == true)
             {
-                PantallaInicioAlumno pantIA = new PantallaInicioAlumno();
+                PantallaInicioAlumno pantIA = new PantallaInicioAlumno(usuario);
                 pantIA.Show();
             }
             if (tipoUs == "Ayudante Tecnico" && pasoEstado2 == true)
             {
-                PantallaInicioAyTecnico pantIAT = new PantallaInicioAyTecnico();
-                pantIAT.Show();
+                MessageBox.Show("El usuario es un ayudante tecnico, por lo que no tiene panel");
             }
             if (tipoUs == "Profesor" && pasoEstado2 == true)
             {
@@ -176,56 +175,43 @@ namespace SAADI{
 	}
 
 	public String getApellido(){
-		return "";
+		return apellido;
 	}
 
 	public DateTime getFechaNacimiento(){
-        return DateTime.Today; //Cambiar
+        return fechaNacimiento;
 	}
 
 	public String getNombre(){
-
-		return "";
+        return nombre;
 	}
 
 	public String getNombreUsuario(){
-
-		return "";
+		return nombreUsuario;
 	}
 
 	public String getPassword(){
-
-		return "";
+		return password;
 	}
 
-	/// 
-	/// <param name="apellido"></param>
-	public void setApellido(String apellido){
-
+	public void setApellido(String apell){
+        this.apellido = apell;
 	}
 
-	/// 
-	/// <param name="fecha"></param>
-	public void setFechaNacimiento(DateTime fecha){
-
+	public void setFechaNacimiento(DateTime fec){
+        this.fechaNacimiento = fec;
 	}
 
-	/// 
-	/// <param name="nombre"></param>
-	public void setNombre(String nombre){
-
+	public void setNombre(String nom){
+        this.nombre = nom;
 	}
 
-	/// 
-	/// <param name="nombreUsuario"></param>
-	public void setNombreUsuario(String nombreUsuario){
-
+	public void setNombreUsuario(String nombreU){
+        this.nombreUsuario = nombreU;
 	}
 
-	/// 
-	/// <param name="password"></param>
-	public void setPassword(String password){
-
+	public void setPassword(String pass){
+        this.password = pass;
 	}
     }
-}//end Usuario
+}

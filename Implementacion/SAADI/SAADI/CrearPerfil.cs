@@ -37,8 +37,30 @@ namespace SAADI
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            Profesor profe = new Profesor();
-            profe.crearPerfilAlumno(textBox1.Text, listBox1, textBox2);
+            int contador = 0;
+            if (textBox1.Text.Equals(""))
+            {
+                MessageBox.Show("Debe ingresar el Nombre de Perfil a crear");
+            }
+            else
+            {
+                for (int i = 0; i < listBox1.Items.Count; i++)
+                {
+                    if (listBox1.GetSelected(i) == true)
+                    {
+                        contador++;
+                    }
+                }
+                if (contador == 0)
+                {
+                    MessageBox.Show("Debe seleccionar actividades para crear el perfil");
+                }
+                else
+                {
+                    Profesor profe = new Profesor();
+                    profe.crearPerfilAlumno(textBox1.Text, listBox1, textBox2);
+                }                
+            }
         }
 
         ArrayList selecc = new ArrayList();

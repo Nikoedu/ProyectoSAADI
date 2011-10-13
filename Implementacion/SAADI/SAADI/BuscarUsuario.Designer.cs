@@ -181,7 +181,7 @@
             this.ClientSize = new System.Drawing.Size(531, 417);
             this.Controls.Add(this.groupBox1);
             this.Name = "BuscarUsuario";
-            this.Text = "Form2";
+            this.Text = "Buscar Usuario";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
