@@ -105,9 +105,16 @@ namespace SAADI
             }
             else if (radioButton3.Checked == true)
             {
-                String tipoBusq = "FechaDeNacimiento";
-                Profesor profe = new Profesor();
-                profe.buscarUsuario(monthCalendar1.SelectionStart.Date.ToString(), tipoBusq, dataGridView1);
+                if (monthCalendar1.SelectionStart.Date >= DateTime.Today)
+                {
+                    MessageBox.Show("La fecha de nacimiento no puede ser mayor o igual a la actual");
+                }
+                else
+                {
+                    String tipoBusq = "FechaDeNacimiento";
+                    Profesor profe = new Profesor();
+                    profe.buscarUsuario(monthCalendar1.SelectionStart.Date.ToString(), tipoBusq, dataGridView1);
+                }
             }
             else if (radioButton4.Checked == true)
             {

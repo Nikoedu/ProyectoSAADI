@@ -31,8 +31,28 @@ namespace SAADI
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Profesor profe = new Profesor();
-            profe.modificarUsuario(false, textBox1.Text, panel1, comboBox1, txt_nombre, txt_apellido, txt_contrasena, monthCalendar1, comboBox2);
+            if (monthCalendar1.SelectionStart.Date >= DateTime.Today)
+            {
+                MessageBox.Show("La fecha de nacimiento no puede ser mayor o igual a la actual");
+            }
+            else if (comboBox1.Text == "Alumno")
+            {
+                if(comboBox2.Text.Equals("")){
+                    MessageBox.Show("Debe seleccionar el nivel de discapacidad");
+                }
+            }
+            else
+            {
+                if (textBox1.Text.Equals("") || comboBox1.Text.Equals("") || txt_nombre.Text.Equals("") || txt_contrasena.Equals(""))
+                {
+                    MessageBox.Show("Todos los campos deben estar completos");
+                }
+                else
+                {
+                    Profesor profe = new Profesor();
+                    profe.modificarUsuario(false, textBox1.Text, panel1, comboBox1, txt_nombre, txt_apellido, txt_contrasena, monthCalendar1, comboBox2);
+                }
+            }
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

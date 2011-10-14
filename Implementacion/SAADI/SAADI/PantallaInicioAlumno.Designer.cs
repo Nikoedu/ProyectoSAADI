@@ -95,7 +95,7 @@
             this.axShockwaveFlash1.Location = new System.Drawing.Point(12, 27);
             this.axShockwaveFlash1.Name = "axShockwaveFlash1";
             this.axShockwaveFlash1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axShockwaveFlash1.OcxState")));
-            this.axShockwaveFlash1.Size = new System.Drawing.Size(653, 581);
+            this.axShockwaveFlash1.Size = new System.Drawing.Size(650, 600);
             this.axShockwaveFlash1.TabIndex = 4;
             // 
             // PantallaInicioAlumno
@@ -108,6 +108,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "PantallaInicioAlumno";
             this.Text = "Inicio Alumno";
+            this.Load += new System.EventHandler(this.PantallaInicioAlumno_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash1)).EndInit();

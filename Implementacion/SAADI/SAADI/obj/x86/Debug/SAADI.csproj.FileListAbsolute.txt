@@ -89,3 +89,33 @@ C:\Documents and Settings\Administrador\Mis documentos\si se la sabe cante\Rama 
 C:\Documents and Settings\Administrador\Mis documentos\si se la sabe cante\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.csproj.ResolveComReference.cache
 C:\Documents and Settings\Administrador\Mis documentos\si se la sabe cante\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.exe
 C:\Documents and Settings\Administrador\Mis documentos\si se la sabe cante\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\bin\Debug\SAADI.exe.config
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\Interop.ShockwaveFlashObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.csproj.ResolveComReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.exe
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\bin\Debug\BDLeni_be.accdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\bin\Debug\SAADI.exe
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\bin\Debug\SAADI.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\bin\Debug\Interop.ShockwaveFlashObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.AgregarUsuario.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.BuscarUsuario.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.AutentificarUsuario.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.CrearPerfil.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.BuscarPerfil.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.GuardarActividad.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.ModificarPerfilAlumno.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.ModificarPerfil.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.PantallaInicioAlumno.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.ObtenerReporte.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.ListarUsuarios.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.InhabilitarUsuario.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.ModificarUsuario.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.PantallaInicioProfesor.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.Properties.Resources.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.SeleccionarActividad.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\GenerateResource.write.1.tlog

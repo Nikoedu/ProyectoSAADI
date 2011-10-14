@@ -46,21 +46,30 @@ namespace SAADI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String nombre = txt_nombre.Text;
-            String apellido = txt_apellido.Text;
-            String nombreUsuario = txt_username.Text;
-            String password = txt_password.Text;
-            String tipoUsuario = comboBox1.Text;
-            DateTime fechadeNace = monthCalendar1.SelectionStart.Date;
-            String nivelDiscapacidad = comboBox2.Text;
-            if (nombre.Equals("") || apellido.Equals("") || nombreUsuario.Equals("") || password.Equals("") || tipoUsuario.Equals("") || nivelDiscapacidad.Equals(""))
+            DateTime fechadeNac = monthCalendar1.SelectionStart.Date;
+            if (fechadeNac >= DateTime.Today)
             {
-                MessageBox.Show("Debe completar todos los campos");
+                MessageBox.Show("La fecha de nacimiento no puede ser mayor o igual a la actual");
             }
             else
             {
-                Profesor profe = new Profesor();
-                profe.agregarUsuario(tipoUsuario, nombre, apellido, nombreUsuario, password, fechadeNace, nivelDiscapacidad);
+                String nombre = txt_nombre.Text;
+                String apellido = txt_apellido.Text;
+                String nombreUsuario = txt_username.Text;
+                String password = txt_password.Text;
+                String tipoUsuario = comboBox1.Text;
+
+                String nivelDiscapacidad = comboBox2.Text;
+                if (nombre.Equals("") || apellido.Equals("") || nombreUsuario.Equals("") || password.Equals("") || tipoUsuario.Equals("") || nivelDiscapacidad.Equals(""))
+                {
+                    MessageBox.Show("Debe completar todos los campos");
+                }
+
+                else
+                {
+                    Profesor profe = new Profesor();
+                    profe.agregarUsuario(tipoUsuario, nombre, apellido, nombreUsuario, password, fechadeNac, nivelDiscapacidad);
+                }
             }
         }
 

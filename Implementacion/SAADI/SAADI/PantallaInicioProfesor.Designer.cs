@@ -42,9 +42,9 @@
             this.modificarPerfilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarPerfilAAlumnoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarPerfilDeAlumnoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generarReporteActividadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,7 +87,7 @@
             this.buscarUsuarioToolStripMenuItem,
             this.listarUsuarioToolStripMenuItem});
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
             // 
             // agregarUsuarioToolStripMenuItem
@@ -133,7 +133,7 @@
             this.modificarPerfilAAlumnoToolStripMenuItem,
             this.buscarPerfilDeAlumnoToolStripMenuItem});
             this.perfilToolStripMenuItem.Name = "perfilToolStripMenuItem";
-            this.perfilToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.perfilToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.perfilToolStripMenuItem.Text = "Perfil";
             // 
             // crearPerfilToolStripMenuItem
@@ -164,19 +164,12 @@
             this.buscarPerfilDeAlumnoToolStripMenuItem.Text = "Buscar Perfil de Alumno";
             this.buscarPerfilDeAlumnoToolStripMenuItem.Click += new System.EventHandler(this.buscarPerfilDeAlumnoToolStripMenuItem_Click);
             // 
-            // salirToolStripMenuItem
-            // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.salirToolStripMenuItem.Text = "Salir";
-            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
-            // 
             // reportesToolStripMenuItem
             // 
             this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.generarReporteActividadesToolStripMenuItem});
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.reportesToolStripMenuItem.Text = "Reportes";
             // 
             // generarReporteActividadesToolStripMenuItem
@@ -184,6 +177,13 @@
             this.generarReporteActividadesToolStripMenuItem.Name = "generarReporteActividadesToolStripMenuItem";
             this.generarReporteActividadesToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
             this.generarReporteActividadesToolStripMenuItem.Text = "Generar Reporte Actividades";
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // PantallaInicioProfesor
             // 
@@ -194,7 +194,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "PantallaInicioProfesor";
-            this.Text = "Form2";
+            this.Text = "Inicio Profesor";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
