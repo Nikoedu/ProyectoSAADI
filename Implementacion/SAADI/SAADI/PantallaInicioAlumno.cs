@@ -62,7 +62,7 @@ namespace SAADI
         }
 
         public void mostrarActividadAlumno(){
-            MessageBox.Show("Entre");
+            ArrayList ordenSecuencia = new ArrayList();
             int idPerfil = 0;
             String query = "SELECT IdPerfil FROM Alumno WHERE NombreUsuario = '" + us + "'";
             String cadena = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\BDLeni_be.accdb"; // no toma el archivo..probemos directamente con C:
@@ -87,10 +87,10 @@ namespace SAADI
             if (idPerfil == 0)
             {
                 MessageBox.Show("El usuario no tiene perfil");
-            }
+            }           
+
             else if (idPerfil == 1)
-            {
-                ArrayList ordenSecuencia = new ArrayList();
+            {                
                 query = "SELECT IDActividad FROM Secuencia ORDER BY PosicionSecuencia";
                 cadena = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\BDLeni_be.accdb"; // no toma el archivo..probemos directamente con C:
                 conexion = new OleDbConnection(cadena);
@@ -101,11 +101,9 @@ namespace SAADI
                     exec.Connection = conexion;
                     exec.Connection.Open();
                     OleDbDataReader aReader = exec.ExecuteReader();
-                    int cont = 0;
                     while (aReader.Read())
                     {
                         ordenSecuencia.Add((int)aReader.GetValue(0));
-                        cont++;
                     }
                     exec.Connection.Close();
                 }
@@ -138,7 +136,6 @@ namespace SAADI
                 if (ordenSecuencia.Count != 0)
                 {
                     mostrarActividad((int) ordenSecuencia[0]);
-                    MessageBox.Show(ordenSecuencia[0].ToString());
                 }
                 else
                 {
@@ -148,13 +145,93 @@ namespace SAADI
             }
             else
             {
-
+                ArrayList actividadesPerfil = new ArrayList();
+                query = "SELECT IDActividad from Actividad_Perfil where IDPerfil = " + idPerfil;
+                cadena = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\BDLeni_be.accdb"; // no toma el archivo..probemos directamente con C:
+                conexion = new OleDbConnection(cadena);
+                OleDbDataAdapter adap = new OleDbDataAdapter(query, conexion);
+                OleDbCommand exec = new OleDbCommand(query, conexion);
+                exec.Connection = conexion;
+                exec.Connection.Open();
+                OleDbDataReader aReader = exec.ExecuteReader();
+                while (aReader.Read())
+                {
+                    actividadesPerfil.Add((int)aReader.GetValue(0));
+                }
+                conexion.Close();
+                query = "SELECT IDActividad FROM Secuencia ORDER BY PosicionSecuencia";
+                cadena = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\BDLeni_be.accdb"; // no toma el archivo..probemos directamente con C:
+                conexion = new OleDbConnection(cadena);
+                try
+                {
+                    adap = new OleDbDataAdapter(query, conexion);
+                    exec = new OleDbCommand(query, conexion);
+                    exec.Connection = conexion;
+                    exec.Connection.Open();
+                    aReader = exec.ExecuteReader();
+                    while (aReader.Read())
+                    {
+                        ordenSecuencia.Add((int)aReader.GetValue(0));
+                    }
+                    exec.Connection.Close();
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show("ERROR: No se puede continuar");
+                }
+                ArrayList actividadesResueltas = new ArrayList();
+                query = "SELECT IDActividad FROM Avance WHERE NombreUsuario = '"+us+"'";
+                cadena = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\BDLeni_be.accdb"; // no toma el archivo..probemos directamente con C:
+                conexion = new OleDbConnection(cadena);
+                try
+                {
+                    adap = new OleDbDataAdapter(query, conexion);
+                    exec = new OleDbCommand(query, conexion);
+                    exec.Connection = conexion;
+                    exec.Connection.Open();
+                    aReader = exec.ExecuteReader();
+                    while (aReader.Read())
+                    {
+                        actividadesResueltas.Add((int) aReader.GetValue(0));
+                    }
+                    exec.Connection.Close();
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show("ERROR: No se puede continuar");
+                }
+                for(int i = 0; i < ordenSecuencia.Count; i++)
+                {
+                    if(actividadesResueltas.Contains(i))
+                    {
+                         actividadesPerfil.Remove(i); 
+                    }
+                }
+                Boolean paso = false;
+                for(int i = 0; i < ordenSecuencia.Count; i++)
+                {
+                    if(actividadesPerfil.Contains(ordenSecuencia[i]))
+                    {
+                        mostrarActividad((int) ordenSecuencia[i]);
+                        i = ordenSecuencia.Count;
+                        paso = true;
+                    }
+                }
+                if (paso == false)
+                {
+                    MessageBox.Show("Felicitaciones se han desarrollado todas las actividades de su perfil");
+                }
             }
 
         }
         private void PantallaInicioAlumno_Load(object sender, EventArgs e)
         {
             mostrarActividadAlumno();
+        }
+
+        private void axShockwaveFlash1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

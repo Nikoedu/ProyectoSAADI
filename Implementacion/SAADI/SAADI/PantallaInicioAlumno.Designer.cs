@@ -97,6 +97,7 @@
             this.axShockwaveFlash1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axShockwaveFlash1.OcxState")));
             this.axShockwaveFlash1.Size = new System.Drawing.Size(650, 600);
             this.axShockwaveFlash1.TabIndex = 4;
+            this.axShockwaveFlash1.Enter += new System.EventHandler(this.axShockwaveFlash1_Enter);
             // 
             // PantallaInicioAlumno
             // 
