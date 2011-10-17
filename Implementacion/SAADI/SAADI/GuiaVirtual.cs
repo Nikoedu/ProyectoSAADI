@@ -15,10 +15,7 @@ public class GuiaVirtual {
 
 	}
 
-	/// 
-	/// <param name="param"></param>
-	public void obtenerInstrucciones(String param){
+	public void entregarInstrucciones(String param){
 
 	}
-
-}//end GuiaVirtual
+}

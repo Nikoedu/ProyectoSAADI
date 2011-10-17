@@ -7,17 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using AxShockwaveFlashObjects;
 
 namespace SAADI
 {
     public partial class SeleccionarActividad : Form
     {
         private String nomAlumno;
-        public SeleccionarActividad(String usuario)
+        public AxShockwaveFlash axShockwaveFlash1;
+        public SeleccionarActividad(String usuario, AxShockwaveFlash axFlash1)
         {
             InitializeComponent();
             groupBox2.Visible = false;
             nomAlumno = usuario;
+            axShockwaveFlash1 = axFlash1;
         }
         public SeleccionarActividad()
         {
@@ -148,9 +151,8 @@ namespace SAADI
             else
             {
                 Profesor profe = new Profesor();
-                profe.seleccionarActividad(idAct);
+                profe.seleccionarActividad(idAct, axShockwaveFlash1);
             }
-
             
         }
         int[] arreglo;

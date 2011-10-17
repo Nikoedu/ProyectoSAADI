@@ -5,6 +5,8 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.OleDb;
 using System.Data;
+using AxShockwaveFlashObjects;
+using System.Collections;
 
 namespace SAADI
 {
@@ -41,6 +43,7 @@ namespace SAADI
                     exec.Connection.Open();
                     exec.CommandText = query;
                     exec.ExecuteNonQuery();
+                    MessageBox.Show("El alumno fue registrado correctamente");
                 }
                 else if (tipoUsuario.Equals("Ayudante Tecnico"))
                 {
@@ -55,6 +58,7 @@ namespace SAADI
                     exec.Connection.Open();
                     exec.CommandText = query;
                     exec.ExecuteNonQuery();
+                    MessageBox.Show("El ayudante técnico fue registrado correctamente");
                 }
             }
             else
@@ -200,12 +204,11 @@ namespace SAADI
         {
             Perfil per = new Perfil();
             per.setNombre(nombre);
-            if (per.tienenPerfil(txt_ord.Text) == false)
-            {
-                String actsinespacio = txt_ord.Text.Replace(" ","");
-                String[] actisinguion = actsinespacio.Split('-');
-                String query = "INSERT INTO Perfil(NombrePerfil) VALUES ('" + per.getNombre() + "')";
-                MessageBox.Show(query);
+            String actsinespacio = txt_ord.Text.Replace(" ", "");
+            String[] actisinguion = actsinespacio.Split('-');
+            if (per.tienenPerfil(actisinguion) == false)
+            {                
+                String query = "INSERT INTO Perfil(IDPerfil, NombrePerfil) VALUES (7,'" + per.getNombre() + "')";
                 String path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase);
                 String cadena = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\BDLeni_be.accdb"; // no toma el archivo..probemos directamente con C:
                 OleDbConnection conexion = new OleDbConnection(cadena);
@@ -235,7 +238,6 @@ namespace SAADI
                 for (int i = 0; i < actisinguion.Length; i++)
                 {
                     query = "INSERT INTO Actividad_Perfil(IDPerfil, IDActividad) VALUES (" + IdPerfil + "," + actisinguion[i]+")";
-                    MessageBox.Show(query);
                     path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase);
                     cadena = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\BDLeni_be.accdb"; // no toma el archivo..probemos directamente con C:
                     conexion = new OleDbConnection(cadena);
@@ -245,8 +247,7 @@ namespace SAADI
                     exec.CommandText = query;
                     exec.ExecuteNonQuery();
                 }
-
-                
+                MessageBox.Show("El perfil fue creado correctamente");                
             }
             
             
@@ -256,28 +257,33 @@ namespace SAADI
         {
             if (existeUsuario(nombreUs) == true)
             {
-                String query = "UPDATE Alumno SET Estado =" + 0 + ", Motivo_Inhabilitacion = '" + motivoInh + "' where NombreUsuario = '" + nombreUs + "'";
-                MessageBox.Show(query);
-                String path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase);
-                String cadena = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\BDLeni_be.accdb"; // no toma el archivo..probemos directamente con C:
-                OleDbConnection conexion = new OleDbConnection(cadena);
-                OleDbCommand exec = new OleDbCommand();
-                exec.Connection = conexion;
-                exec.Connection.Open();
-                exec.CommandText = query;
-                exec.ExecuteNonQuery();
-                conexion.Close();
-                //Si es ayudante Tecnico 
-                query = "UPDATE EncargadoEducacional SET Estado =" + 0 + ", Motivo_Inhabilitacion = '" + motivoInh + "' where NombreUsuario = '" + nombreUs + "'";
-                MessageBox.Show(query);
-                path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase);
-                cadena = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\BDLeni_be.accdb"; // no toma el archivo..probemos directamente con C:
-                conexion = new OleDbConnection(cadena);
-                exec = new OleDbCommand();
-                exec.Connection = conexion;
-                exec.Connection.Open();
-                exec.CommandText = query;
-                exec.ExecuteNonQuery();
+                switch (MessageBox.Show("¿Esta seguro de realizar la accion?","Advertencia",MessageBoxButtons.YesNoCancel,MessageBoxIcon.Question))
+                {
+                        case DialogResult.Yes:
+                        String query = "UPDATE Alumno SET Estado =" + 0 + ", Motivo_Inhabilitacion = '" + motivoInh + "' where NombreUsuario = '" + nombreUs + "'";
+                        String path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase);
+                        String cadena = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\BDLeni_be.accdb"; // no toma el archivo..probemos directamente con C:
+                        OleDbConnection conexion = new OleDbConnection(cadena);
+                        OleDbCommand exec = new OleDbCommand();
+                        exec.Connection = conexion;
+                        exec.Connection.Open();
+                        exec.CommandText = query;
+                        exec.ExecuteNonQuery();
+                        conexion.Close();
+                        //Si es ayudante Tecnico 
+                        query = "UPDATE EncargadoEducacional SET Estado =" + 0 + ", Motivo_Inhabilitacion = '" + motivoInh + "' where NombreUsuario = '" + nombreUs + "'";
+                        MessageBox.Show(query);
+                        path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase);
+                        cadena = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\BDLeni_be.accdb"; // no toma el archivo..probemos directamente con C:
+                        conexion = new OleDbConnection(cadena);
+                        exec = new OleDbCommand();
+                        exec.Connection = conexion;
+                        exec.Connection.Open();
+                        exec.CommandText = query;
+                        exec.ExecuteNonQuery();
+                        MessageBox.Show("Usuario inhabilitado correctamente");
+                        break;
+                }
             }
             else
             {
@@ -337,10 +343,11 @@ namespace SAADI
 
         public void modificarPerfilAlumno(String nombreUs, ComboBox com1)
         {
-            String nomPerfil = com1.SelectedItem.ToString();
+            Perfil perf = new Perfil();
+            perf.setNombre(com1.SelectedItem.ToString());
             //Consultar por IDPerfil ingresado
             int IdPerfil = 0;
-            String query = "SELECT IDPerfil from Perfil where NombrePerfil = '" + nomPerfil + "'";
+            String query = "SELECT IDPerfil from Perfil where NombrePerfil = '" + perf.getNombre() + "'";
             String cadena = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\BDLeni_be.accdb"; // no toma el archivo..probemos directamente con C:
             OleDbConnection conexion = new OleDbConnection(cadena);
             OleDbDataAdapter adap = new OleDbDataAdapter(query, conexion);
@@ -510,14 +517,15 @@ namespace SAADI
             else
             {
                 MessageBox.Show("El usuario no existe o no es un alumno");
+                DataSet ds = new DataSet();
+                dataGridView1.DataSource = ds;
             }
             
         }
-        public void seleccionarActividad(int idActividad)
+        public void seleccionarActividad(int idActividad, AxShockwaveFlash axFlash1)
         {
-            PantallaInicioAlumno pIA = new PantallaInicioAlumno();
-            pIA.mostrarActividad(idActividad);
-            pIA.Show();
+            Actividad act = new Actividad();
+            act.mostrarActividad(idActividad, axFlash1);
         }
     }
 }

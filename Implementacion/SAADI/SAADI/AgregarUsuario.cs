@@ -25,8 +25,8 @@ namespace SAADI
         public AgregarUsuario()
         {
             InitializeComponent();
-            llenarCombo(tipo, comboBox2);
-            llenarCombo(nvl, comboBox1);
+            llenarCombo(nvl, comboBox2);
+            llenarCombo(tipo, comboBox1);
 
         }
 
@@ -53,16 +53,16 @@ namespace SAADI
             }
             else
             {
-                String nombre = txt_nombre.Text;
-                String apellido = txt_apellido.Text;
-                String nombreUsuario = txt_username.Text;
-                String password = txt_password.Text;
-                String tipoUsuario = comboBox1.Text;
+                String nombre = txt_nombre.Text.Trim();
+                String apellido = txt_apellido.Text.Trim();
+                String nombreUsuario = txt_username.Text.Trim();
+                String password = txt_password.Text.Trim();
+                String tipoUsuario = comboBox1.Text.Trim();
 
                 String nivelDiscapacidad = comboBox2.Text;
                 if (nombre.Equals("") || apellido.Equals("") || nombreUsuario.Equals("") || password.Equals("") || tipoUsuario.Equals("") || nivelDiscapacidad.Equals(""))
                 {
-                    MessageBox.Show("Debe completar todos los campos");
+                    MessageBox.Show("Debe completar todos los campos. Compruebe que no sean espacios en blanco");
                 }
 
                 else

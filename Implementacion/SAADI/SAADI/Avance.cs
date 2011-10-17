@@ -12,14 +12,9 @@ namespace SAADI
 
         }
         
-        public virtual void Dispose()
-        {
-
-        }
-
         public void guardarAvance(String nomUsAl, String usuario, String password, int idAct)
         {
-            Usuario usu = new Usuario();
+            Usuario usu = new Usuario(); 
             if (usu.existeUsuario(usuario) == true)
             {
                 int contador2 = 0;
@@ -125,10 +120,6 @@ namespace SAADI
 
         }
 
-        public void obtenerAvance()
-        {
-
-        }
-
+      
     }
 }

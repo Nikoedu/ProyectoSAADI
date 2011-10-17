@@ -87,7 +87,7 @@
             this.buscarUsuarioToolStripMenuItem,
             this.listarUsuarioToolStripMenuItem});
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
             // 
             // agregarUsuarioToolStripMenuItem
@@ -133,7 +133,7 @@
             this.modificarPerfilAAlumnoToolStripMenuItem,
             this.buscarPerfilDeAlumnoToolStripMenuItem});
             this.perfilToolStripMenuItem.Name = "perfilToolStripMenuItem";
-            this.perfilToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.perfilToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.perfilToolStripMenuItem.Text = "Perfil";
             // 
             // crearPerfilToolStripMenuItem
@@ -169,7 +169,7 @@
             this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.generarReporteActividadesToolStripMenuItem});
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.reportesToolStripMenuItem.Text = "Reportes";
             // 
             // generarReporteActividadesToolStripMenuItem
@@ -177,11 +177,12 @@
             this.generarReporteActividadesToolStripMenuItem.Name = "generarReporteActividadesToolStripMenuItem";
             this.generarReporteActividadesToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
             this.generarReporteActividadesToolStripMenuItem.Text = "Generar Reporte Actividades";
+            this.generarReporteActividadesToolStripMenuItem.Click += new System.EventHandler(this.generarReporteActividadesToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 

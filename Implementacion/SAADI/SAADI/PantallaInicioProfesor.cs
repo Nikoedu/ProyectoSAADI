@@ -74,5 +74,11 @@ namespace SAADI
         {
             this.Close();
         }
+
+        private void generarReporteActividadesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ObtenerReporte obtRe = new ObtenerReporte();
+            obtRe.Show();
+        }
     }
 }

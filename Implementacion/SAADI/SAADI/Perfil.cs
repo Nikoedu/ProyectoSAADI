@@ -3,17 +3,22 @@ using System;
 using System.Data.OleDb;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using System.Collections;
 public class Perfil {
 
 	private String Nombre;
-	// public Perfil_Actividad m_Perfil_Actividad;
 
 	public Perfil(){
 
 	}
 
-    public Boolean tienenPerfil(String actividades)
+    public Boolean tienenPerfil(String[] actSinGuion)
     {
+        ArrayList acti = new ArrayList();
+        for (int i = 0; i < actSinGuion.Length; i++)
+        {
+            acti.Add(actSinGuion[i]);
+        }        
         int cantPerfiles = 0;
         String query = "SELECT COUNT(*) from Perfil";
         String cadena = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\BDLeni_be.accdb"; // no toma el archivo..probemos directamente con C:
@@ -29,11 +34,13 @@ public class Perfil {
         }
        
         conexion.Close();
-        List<String> lista = new List<String>();
-     
+        Boolean existe = false;
+        int existePerf = 0;
+        int contador = 0;
         for (int i = 1; i <= cantPerfiles; i++)
         {
-            query = "SELECT IDActividad from Actividad_Perfil WHERE IDPerfil = " + i ;
+            existePerf = 0;
+            query = "SELECT IDActividad from Actividad_Perfil WHERE IDPerfil = " + i;
             cadena = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\BDLeni_be.accdb"; // no toma el archivo..probemos directamente con C:
             conexion = new OleDbConnection(cadena);
             adap = new OleDbDataAdapter(query, conexion);
@@ -41,26 +48,25 @@ public class Perfil {
             exec.Connection = conexion;
             exec.Connection.Open();
             aReader = exec.ExecuteReader();
-            int cont = 0;
-            String formar_lista = "";
             while (aReader.Read())
             {
-                if(cont != 0){
-                    formar_lista = formar_lista + " - " + aReader.GetValue(0);
+                contador++;
+                if (acti.Contains(aReader.GetValue(0).ToString()))
+                {                              
+                    existePerf++;
                 }
-                else{
-                    formar_lista = formar_lista + aReader.GetValue(0);
-                    cont++;
-                }
+                else
+                {
+                    contador = 0;
+                    existePerf = 0;
+                }                
             }
-            lista.Add(formar_lista);
-            MessageBox.Show(formar_lista);
-        }
-        Boolean existe = false;
-        if (lista.Contains(actividades))
-        {
-            MessageBox.Show("Las actividades ya estan asociadas a un perfil");
-            existe = true;
+            if (existePerf == actSinGuion.Length && contador == actSinGuion.Length)
+            {
+                MessageBox.Show("Las actividades ya estan asociadas a un perfil");
+                existe = true;
+                i = cantPerfiles + 1;
+            }
         }
         return existe;
     }
@@ -74,4 +80,4 @@ public class Perfil {
         this.Nombre = nombre;
 	}
 
-}//end Perfil
+}

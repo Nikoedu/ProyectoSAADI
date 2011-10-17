@@ -18,9 +18,9 @@ namespace SAADI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text.Equals(""))
+            if (textBox1.Text.Trim().Equals(""))
             {
-                MessageBox.Show("Debe completar el campo pedido");
+                MessageBox.Show("Debe completar el campo pedido. Compruebe que no sean espacios en blanco");
             }
             else
             {

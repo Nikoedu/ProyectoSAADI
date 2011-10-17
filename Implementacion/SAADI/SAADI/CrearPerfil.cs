@@ -18,7 +18,7 @@ namespace SAADI
             InitializeComponent();
             llenarLista();
         }
-
+        ArrayList selecc = new ArrayList();
         public void llenarLista()
         {
             String query = "SELECT Ac.IDActividad, TA.NombreTipoActividad, Ac.NombreActividad from Actividad AS Ac, TipoActividad AS TA WHERE Ac.IDTipoActividad = TA.IDTipoActividad";
@@ -63,7 +63,7 @@ namespace SAADI
             }
         }
 
-        ArrayList selecc = new ArrayList();
+        
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             for (int i = 0; i < listBox1.Items.Count; i++)
@@ -103,6 +103,11 @@ namespace SAADI
         private void listBox1_MouseUp(object sender, MouseEventArgs e)
         {
            
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

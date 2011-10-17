@@ -18,9 +18,9 @@ namespace SAADI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text.Equals("") || textBox2.Text.Equals(""))
+            if (textBox1.Text.Trim().Equals("") || textBox2.Text.Trim().Equals(""))
             {
-                MessageBox.Show("Debe completar todos los campos");
+                MessageBox.Show("Debe completar todos los campos. Compruebe que no sean espacios en blanco");
             }
             else
             {

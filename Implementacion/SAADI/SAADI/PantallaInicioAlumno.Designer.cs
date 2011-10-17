@@ -88,6 +88,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(677, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // axShockwaveFlash1
             // 
@@ -126,7 +127,7 @@
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private AxShockwaveFlashObjects.AxShockwaveFlash axShockwaveFlash1;
+        public AxShockwaveFlashObjects.AxShockwaveFlash axShockwaveFlash1;
 
     }
 }

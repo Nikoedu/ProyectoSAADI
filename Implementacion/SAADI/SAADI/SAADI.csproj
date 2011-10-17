@@ -61,8 +61,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Actividad_Perfil.cs" />
+    <Compile Include="Actividad.cs" />
+    <Compile Include="Alumno.cs" />
     <Compile Include="Avance.cs" />
+    <Compile Include="AyudanteTecnico.cs" />
     <Compile Include="BDLeni_beDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

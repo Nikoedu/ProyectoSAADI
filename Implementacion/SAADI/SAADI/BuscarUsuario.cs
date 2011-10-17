@@ -79,9 +79,9 @@ namespace SAADI
             dataGridView1.Visible = true;
             if (radioButton1.Checked == true)
             {
-                if (textBox1.Text.Equals(""))
+                if (textBox1.Text.Trim().Equals(""))
                 {
-                    MessageBox.Show("Debe seleccionar el parametro de busqueda");
+                    MessageBox.Show("Debe indicar el parametro de busqueda");
                 }
                 else
                 {
@@ -92,9 +92,9 @@ namespace SAADI
             }
             else if (radioButton2.Checked == true)
             {
-                if (textBox1.Text.Equals(""))
+                if (textBox1.Text.Trim().Equals(""))
                 {
-                    MessageBox.Show("Debe seleccionar el parametro de busqueda");
+                    MessageBox.Show("Debe indicar el parametro de busqueda");
                 }
                 else
                 {
