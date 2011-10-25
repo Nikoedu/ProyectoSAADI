@@ -95,7 +95,6 @@ C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implem
 C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.csproj.ResolveComReference.cache
 C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.exe
 C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.pdb
-C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\bin\Debug\BDLeni_be.accdb
 C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\bin\Debug\SAADI.exe
 C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\bin\Debug\SAADI.pdb
 C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\bin\Debug\Interop.ShockwaveFlashObjects.dll

@@ -10,8 +10,8 @@ using System.Collections;
 
 namespace SAADI
 {
-    public class Profesor : Usuario
-    {
+    public class Profesor : Usuario{
+    
         public Profesor()
         {
             
@@ -402,7 +402,7 @@ namespace SAADI
                         txt_n.Text = aReader.GetValue(0).ToString();
                         txt_a.Text = aReader.GetValue(1).ToString();
                         txt_c.Text = aReader.GetValue(2).ToString();
-                        MessageBox.Show(aReader.GetValue(3).ToString());
+                        mcal1.SelectionStart = DateTime.Parse(aReader.GetValue(3).ToString());
                         if (aReader.GetValue(4).ToString() == "Bajo")
                         {
                             com2.SelectedIndex = 0;
