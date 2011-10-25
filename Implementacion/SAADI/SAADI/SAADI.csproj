@@ -65,11 +65,6 @@
     <Compile Include="Alumno.cs" />
     <Compile Include="Avance.cs" />
     <Compile Include="AyudanteTecnico.cs" />
-    <Compile Include="BDLeni_beDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BDLeni_beDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="BuscarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,17 +216,6 @@
       <DependentUpon>SeleccionarActividad.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
-    <None Include="BDLeni_beDataSet.xsc">
-      <DependentUpon>BDLeni_beDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="BDLeni_beDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BDLeni_beDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BDLeni_beDataSet.xss">
-      <DependentUpon>BDLeni_beDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -260,11 +244,6 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="BDLeni_be.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
