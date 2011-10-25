@@ -14,12 +14,14 @@ namespace SAADI
     public partial class SeleccionarActividad : Form
     {
         private String nomAlumno;
+        public static int idAct = 0;
         public AxShockwaveFlash axShockwaveFlash1;
-        public SeleccionarActividad(String usuario, AxShockwaveFlash axFlash1)
+        public SeleccionarActividad(String usuario, int idActi, AxShockwaveFlash axFlash1)
         {
             InitializeComponent();
             groupBox2.Visible = false;
             nomAlumno = usuario;
+            idAct = idActi;
             axShockwaveFlash1 = axFlash1;
         }
         public SeleccionarActividad()
@@ -137,7 +139,7 @@ namespace SAADI
         {
             autentificarEncargadoEduc(textBox1.Text, textBox2.Text);
         }
-        int idAct = 0;
+        
         private void button2_Click(object sender, EventArgs e)
         {
             if (idAct == 0)

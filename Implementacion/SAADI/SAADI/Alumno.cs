@@ -93,7 +93,9 @@ namespace SAADI
                 }
                 if (ordenSecuencia.Count != 0)
                 {
+                    MessageBox.Show("" + ordenSecuencia[0]);
                     Actividad act = new Actividad();
+                    SAADI.SeleccionarActividad.idAct = (int) ordenSecuencia[0];
                     act.mostrarActividad(((int)ordenSecuencia[0]), axFlash1);
                 }
                 else
@@ -172,6 +174,7 @@ namespace SAADI
                     if (actividadesPerfil.Contains(ordenSecuencia[i]))
                     {
                         Actividad act = new Actividad();
+                        SAADI.SeleccionarActividad.idAct = (int)ordenSecuencia[i];
                         act.mostrarActividad((int)ordenSecuencia[i], axFlash1);
                         i = ordenSecuencia.Count;
                         paso = true;

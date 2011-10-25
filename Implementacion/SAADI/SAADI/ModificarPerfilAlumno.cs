@@ -24,7 +24,7 @@ namespace SAADI
 
         public void llenarComboBox(int IdPer)
         {
-            String query = "SELECT DISTINCT P.NombrePerfil from Alumno AS A, Perfil AS P where P.IDPerfil = A.IDPerfil AND A.IDPerfil <> " + IdPer;
+            String query = "SELECT P.NombrePerfil from Perfil AS P where P.IDPerfil <> " + IdPer;
             String cadena = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\BDLeni_be.accdb"; // no toma el archivo..probemos directamente con C:
             OleDbConnection conexion = new OleDbConnection(cadena);
             OleDbDataAdapter adap = new OleDbDataAdapter(query, conexion);

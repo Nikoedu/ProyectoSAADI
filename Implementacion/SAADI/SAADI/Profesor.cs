@@ -402,7 +402,7 @@ namespace SAADI
                         txt_n.Text = aReader.GetValue(0).ToString();
                         txt_a.Text = aReader.GetValue(1).ToString();
                         txt_c.Text = aReader.GetValue(2).ToString();
-                        mcal1.SelectionStart = DateTime.Parse(aReader.GetValue(3).ToString());
+                        mcal1.SetDate(DateTime.Parse(aReader.GetValue(3).ToString()));
                         if (aReader.GetValue(4).ToString() == "Bajo")
                         {
                             com2.SelectedIndex = 0;
@@ -432,7 +432,7 @@ namespace SAADI
                         txt_n.Text = aReader.GetValue(0).ToString();
                         txt_a.Text = aReader.GetValue(1).ToString();
                         txt_c.Text = aReader.GetValue(2).ToString();
-                        mcal1.SelectionStart = DateTime.Parse(aReader.GetValue(3).ToString());
+                        mcal1.SetDate(DateTime.Parse(aReader.GetValue(3).ToString()));
                         ayud = true;
                         
                     }
@@ -449,9 +449,8 @@ namespace SAADI
             if (pedirDatos == false){
                     pan.Visible = true;
                     if (com1.SelectedItem.ToString() == "Alumno")
-                    {
+                    {                        
                         String query = "UPDATE Alumno SET nombre ='" + txt_n.Text + "', apellido = '" + txt_a.Text + "', contraseña = '" + txt_c.Text + "', FechadeNacimiento = DATEVALUE('" + mcal1.SelectionStart.ToString() + "'), NiveldeDiscapacidad = '" + com2.SelectedItem.ToString() + "' where NombreUsuario = '" + nombreUs + "'";
-                        MessageBox.Show(query);
                         String path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase);
                         String cadena = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\BDLeni_be.accdb"; // no toma el archivo..probemos directamente con C:
                         OleDbConnection conexion = new OleDbConnection(cadena);
@@ -460,12 +459,12 @@ namespace SAADI
                         exec.Connection.Open();
                         exec.CommandText = query;
                         exec.ExecuteNonQuery();
+                        MessageBox.Show("Alumno Modificado Correctamente");
                     }
                     else if (com1.SelectedItem.ToString() == "Ayudante Tecnico")
                     {
                         com2.Enabled = false;
                         String query = "UPDATE EncargadoEducacional SET nombre ='" + txt_n.Text + "', apellido = '" + txt_a.Text + "', contraseña = '" + txt_c.Text + "', FechadeNacimiento = '" + mcal1.SelectionStart.ToString() + "'  where NombreUsuario = '" + nombreUs + "'";
-                        MessageBox.Show(query);
                         String path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase);
                         String cadena = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\BDLeni_be.accdb"; // no toma el archivo..probemos directamente con C:
                         OleDbConnection conexion = new OleDbConnection(cadena);
@@ -474,6 +473,7 @@ namespace SAADI
                         exec.Connection.Open();
                         exec.CommandText = query;
                         exec.ExecuteNonQuery();
+                        MessageBox.Show("Ayudante Tecnico Modificado Correctamente");
                     }                
             }
             

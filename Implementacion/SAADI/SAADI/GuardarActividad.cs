@@ -20,7 +20,7 @@ namespace SAADI
         {
             
             String nomUsuarioAl = SAADI.PantallaInicioAlumno.us;
-            int idActividad = SAADI.PantallaInicioAlumno.idAct;
+            int idActividad = SAADI.SeleccionarActividad.idAct;
             Avance av = new Avance();
             if (textBox1.Text.Equals("") || textBox2.Text.Equals(""))
             {

@@ -74,6 +74,8 @@ namespace SAADI
                     //Consultar si la actividad ya se guardo
                     int contador = 0;
                     query = "SELECT COUNT(*) from Avance where NombreUsuario = '"+nomUsAl+"' and IDActividad = "+idAct;
+                    MessageBox.Show(""+idAct);
+                    MessageBox.Show(nomUsAl);
                     cadena = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\BDLeni_be.accdb"; // no toma el archivo..probemos directamente con C:
                     conexion = new OleDbConnection(cadena);
                     adap = new OleDbDataAdapter(query, conexion);

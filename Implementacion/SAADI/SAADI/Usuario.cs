@@ -77,11 +77,12 @@ namespace SAADI{
                     }
                     else
                     {
-                        MessageBox.Show("El usuario esta deshabilitado, Motivo: "+aReader.GetValue(1).ToString());
+                        MessageBox.Show("El usuario esta deshabilitado, Motivo: " + aReader.GetValue(1).ToString());
                     }
                 }
-                
+
             }
+            
             if (contador2 == 1)
             {
                 query = "SELECT Estado, Motivo_Inhabilitacion FROM EncargadoEducacional where NombreUsuario = '" + usuario + "'";
@@ -114,6 +115,18 @@ namespace SAADI{
                 {
                     tipoUs = aReader.GetValue(0).ToString();
                 }
+            }
+            if (tipoUs == "Alumno" && contador != 1)
+            {
+                MessageBox.Show("Contraseña no valida");
+            }
+            if (tipoUs == "Ayudante Tecnico" && contador2 != 1)
+            {
+                MessageBox.Show("Contraseña no valida");
+            }
+            if (tipoUs == "Profesor" && contador2 != 1)
+            {
+                MessageBox.Show("Contraseña no valida");
             }
             if (tipoUs == "Alumno" && pasoEstado == true)
             {

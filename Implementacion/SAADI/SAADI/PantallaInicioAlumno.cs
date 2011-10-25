@@ -14,15 +14,17 @@ namespace SAADI
     public partial class PantallaInicioAlumno : Form
     {
         public static String us;
-        public static int idAct;
+        public static int idActividad;
+        public PantallaInicioAlumno(String usuario, int idAct)
+        {
+            InitializeComponent();
+            us = usuario;
+            idActividad = idAct;
+        }
         public PantallaInicioAlumno(String usuario)
         {
             InitializeComponent();
             us = usuario;
-        }
-        public PantallaInicioAlumno()
-        {
-            InitializeComponent();
         }
         
         private void label1_Click(object sender, EventArgs e)
@@ -37,7 +39,7 @@ namespace SAADI
 
         private void seleccionarActividadToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SeleccionarActividad selAc = new SeleccionarActividad(us, axShockwaveFlash1);
+            SeleccionarActividad selAc = new SeleccionarActividad(us, idActividad, axShockwaveFlash1);
             selAc.Show();
         }
 
