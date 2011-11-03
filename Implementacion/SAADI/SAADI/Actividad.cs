@@ -36,7 +36,7 @@ namespace SAADI
 
         public void mostrarActividad(int idAc, AxShockwaveFlash axFlash1)
         {
-            String ruta = "C:\\Documents and Settings\\Administrador\\Escritorio\\Copia de Rama Software\\Implementacion\\Actividades";
+            String ruta = "\\Actividades";
             MessageBox.Show(ruta + "\\" + idAc);
             axFlash1.LoadMovie(0, ruta + "\\" + idAc);
         }
