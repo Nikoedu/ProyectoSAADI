@@ -1,0 +1,149 @@
+E:\UNAB\Taller I y II\ProyectoSAADI\ProyectoSAADI\Implementacion\SAADI\SAADI\bin\Debug\SAADI.exe
+E:\UNAB\Taller I y II\ProyectoSAADI\ProyectoSAADI\Implementacion\SAADI\SAADI\bin\Debug\SAADI.pdb
+E:\UNAB\Taller I y II\ProyectoSAADI\ProyectoSAADI\Implementacion\SAADI\SAADI\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\UNAB\Taller I y II\ProyectoSAADI\ProyectoSAADI\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.Form1.resources
+E:\UNAB\Taller I y II\ProyectoSAADI\ProyectoSAADI\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.Properties.Resources.resources
+E:\UNAB\Taller I y II\ProyectoSAADI\ProyectoSAADI\Implementacion\SAADI\SAADI\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\UNAB\Taller I y II\ProyectoSAADI\ProyectoSAADI\Implementacion\SAADI\SAADI\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\UNAB\Taller I y II\ProyectoSAADI\ProyectoSAADI\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.exe
+E:\UNAB\Taller I y II\ProyectoSAADI\ProyectoSAADI\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.pdb
+E:\UNAB\Taller I y II\ProyectoSAADI\ProyectoSAADI\Implementacion\SAADI\SAADI\obj\x86\Debug\Interop.ShockwaveFlashObjects.dll
+E:\UNAB\Taller I y II\ProyectoSAADI\ProyectoSAADI\Implementacion\SAADI\SAADI\obj\x86\Debug\AxInterop.ShockwaveFlashObjects.dll
+E:\UNAB\Taller I y II\ProyectoSAADI\ProyectoSAADI\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.csproj.ResolveComReference.cache
+E:\UNAB\Taller I y II\ProyectoSAADI\ProyectoSAADI\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.Actividades.resources
+E:\UNAB\Taller I y II\ProyectoSAADI\ProyectoSAADI\Implementacion\SAADI\SAADI\bin\Debug\SAADI.exe.config
+E:\UNAB\Taller I y II\ProyectoSAADI\ProyectoSAADI\Implementacion\SAADI\SAADI\bin\Debug\BDLeni_be.accdb
+E:\UNAB\Taller I y II\ProyectoSAADI\ProyectoSAADI\Implementacion\SAADI\SAADI\bin\Debug\Interop.ShockwaveFlashObjects.dll
+E:\UNAB\Taller I y II\ProyectoSAADI\ProyectoSAADI\Implementacion\SAADI\SAADI\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\bin\Debug\SAADI.exe.config
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\obj\x86\Debug\Interop.ShockwaveFlashObjects.dll
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\obj\x86\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.csproj.ResolveComReference.cache
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.exe
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.pdb
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\bin\Debug\BDLeni_be.accdb
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\bin\Debug\SAADI.exe
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\bin\Debug\SAADI.pdb
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\bin\Debug\Interop.ShockwaveFlashObjects.dll
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.Actividades.resources
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.Properties.Resources.resources
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.AgregarUsuario.resources
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.BuscarUsuario.resources
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.ModificarUsuario.resources
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.ListarUsuarios.resources
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.InhabilitarUsuario.resources
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.ObtenerReporte.resources
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.AutentificarUsuario.resources
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.PantallaInicioAlumno.resources
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.PantallaInicioAyTecnico.resources
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.PantallaInicioProfesor.resources
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.CrearPerfil.resources
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.ModificarPerfil.resources
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.BuscarPerfil.resources
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.ModificarPerfilAlumno.resources
+C:\Documents and Settings\Administrador\Mis documentos\Mis archivos recibidos\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.SeleccionarActividad.resources
+C:\Documents and Settings\Administrador\Escritorio\SAADI 2\SAADI\bin\Debug\SAADI.exe.config
+C:\Documents and Settings\Administrador\Escritorio\SAADI 2\SAADI\obj\x86\Debug\Interop.ShockwaveFlashObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\SAADI 2\SAADI\obj\x86\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\SAADI 2\SAADI\obj\x86\Debug\SAADI.csproj.ResolveComReference.cache
+C:\Documents and Settings\Administrador\Escritorio\SAADI 2\SAADI\obj\x86\Debug\SAADI.exe
+C:\Documents and Settings\Administrador\Escritorio\SAADI 2\SAADI\obj\x86\Debug\SAADI.pdb
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\bin\Debug\SAADI.exe.config
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\Interop.ShockwaveFlashObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.csproj.ResolveComReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.exe
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.pdb
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\bin\Debug\BDLeni_be.accdb
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\bin\Debug\SAADI.exe
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\bin\Debug\SAADI.pdb
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\bin\Debug\Interop.ShockwaveFlashObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.AgregarUsuario.resources
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.BuscarUsuario.resources
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.AutentificarUsuario.resources
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.CrearPerfil.resources
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.BuscarPerfil.resources
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.ModificarPerfilAlumno.resources
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.ModificarPerfil.resources
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.PantallaInicioAlumno.resources
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.ObtenerReporte.resources
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.ListarUsuarios.resources
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.InhabilitarUsuario.resources
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.ModificarUsuario.resources
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.PantallaInicioProfesor.resources
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.Properties.Resources.resources
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.SeleccionarActividad.resources
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.Actividad.resources
+C:\Documents and Settings\Administrador\Escritorio\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.GuardarActividad.resources
+C:\Documents and Settings\Administrador\Mis documentos\si se la sabe cante\Rama Software\Implementacion\SAADI\SAADI\bin\Debug\SAADI.exe.config
+C:\Documents and Settings\Administrador\Mis documentos\si se la sabe cante\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\Interop.ShockwaveFlashObjects.dll
+C:\Documents and Settings\Administrador\Mis documentos\si se la sabe cante\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\Documents and Settings\Administrador\Mis documentos\si se la sabe cante\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.csproj.ResolveComReference.cache
+C:\Documents and Settings\Administrador\Mis documentos\si se la sabe cante\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.exe
+C:\Documents and Settings\Administrador\Mis documentos\si se la sabe cante\Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\bin\Debug\SAADI.exe.config
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\bin\Debug\SAADI.exe
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\bin\Debug\SAADI.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\bin\Debug\Interop.ShockwaveFlashObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\Interop.ShockwaveFlashObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.csproj.ResolveComReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.AgregarUsuario.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.BuscarUsuario.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.AutentificarUsuario.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.CrearPerfil.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.BuscarPerfil.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.GuardarActividad.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.ModificarPerfilAlumno.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.ModificarPerfil.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.PantallaInicioAlumno.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.ObtenerReporte.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.ListarUsuarios.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.InhabilitarUsuario.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.ModificarUsuario.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.PantallaInicioProfesor.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.Properties.Resources.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.SeleccionarActividad.resources
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.exe
+C:\Documents and Settings\Administrador\Escritorio\Copia de Rama Software\Implementacion\SAADI\SAADI\obj\x86\Debug\SAADI.pdb
+C:\SAADI\SAADI\SAADI\bin\Debug\SAADI.exe.config
+C:\SAADI\SAADI\SAADI\obj\x86\Debug\Interop.ShockwaveFlashObjects.dll
+C:\SAADI\SAADI\SAADI\obj\x86\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.csproj.ResolveComReference.cache
+C:\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.exe
+C:\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.pdb
+C:\SAADI\SAADI\SAADI\bin\Debug\SAADI.exe
+C:\SAADI\SAADI\SAADI\bin\Debug\SAADI.pdb
+C:\SAADI\SAADI\SAADI\bin\Debug\Interop.ShockwaveFlashObjects.dll
+C:\SAADI\SAADI\SAADI\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\SAADI\SAADI\SAADI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.AgregarUsuario.resources
+C:\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.BuscarUsuario.resources
+C:\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.AutentificarUsuario.resources
+C:\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.CrearPerfil.resources
+C:\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.BuscarPerfil.resources
+C:\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.GuardarActividad.resources
+C:\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.ModificarPerfilAlumno.resources
+C:\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.ModificarPerfil.resources
+C:\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.PantallaInicioAlumno.resources
+C:\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.ObtenerReporte.resources
+C:\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.ListarUsuarios.resources
+C:\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.InhabilitarUsuario.resources
+C:\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.ModificarUsuario.resources
+C:\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.PantallaInicioProfesor.resources
+C:\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.Properties.Resources.resources
+C:\SAADI\SAADI\SAADI\obj\x86\Debug\SAADI.SeleccionarActividad.resources
+C:\SAADI\SAADI\SAADI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\SAADI\SAADI\SAADI\obj\x86\Debug\GenerateResource.write.1.tlog

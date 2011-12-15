@@ -36,6 +36,9 @@ namespace SAADI
 
         public void mostrarActividad(int idAc, AxShockwaveFlash axFlash1)
         {
+            String path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase);
+            path = path.Substring(0, 12);
+            MessageBox.Show(path);
             String ruta = "\\Actividades";
             MessageBox.Show(ruta + "\\" + idAc);
             axFlash1.LoadMovie(0, ruta + "\\" + idAc);
